@@ -14,4 +14,4 @@ var CountArray =new Array(8);
 $(document).ready(function () {
     suares=$('.square');
     chesspieces=$('.pieces');
-})
+});
