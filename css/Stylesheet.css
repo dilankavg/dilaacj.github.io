@@ -113,13 +113,21 @@ ul li a:hover{
 #middlepic{
     width: 500px;
     height: 500px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 350px;
 }
 .test1{
     font-size: 20px;
     color: white;
     background-color: black;
+}
+#help1{
+    width: 500px;
+    height: 500px;
+}
+#help2{
+    width: 500px;
+    height: 500px;
 }
 
 
