@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chess Game</title>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="js/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/Stylesheet.css">
+
+</head>
+<body>
+
+<div id="top">ChessXtremes</div>
+<ul>
+    <li><a href="index.html" >Home</a><br></li>
+    <li><a href="help.html" >Help</a><br></li>
+    <li><a href="game.html" >Game</a><br></li>
+    <li><a>About</a></li>
+    <li><a>Follow</a></li>
+</ul>
+    <div id="div-1">
+
+        <div id="row-1" class="row">
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center"><span>1</span></div>
+            <div id="A1" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="black-Rock" class="pieces black Rock1" src="images/black-Rock.png"></div>
+            <div id="B1" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="black-Knight" class="pieces black" src="images/black-Knight.png"></div>
+            <div id="C1" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="black-Bishop" class="pieces black" src="images/black-Bishop.png"> </div>
+            <div id="D1" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="black-Queen" class="pieces black" src="images/black-Queen.png"></div>
+            <div id="E1" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="black-King" class="pieces black" src="images/black-King.png"></div>
+            <div id="F1" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="black-Bishop1" class="pieces black" src="images/black-Bishop.png"></div>
+            <div id="G1" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="black-Knight1" class="pieces black" src="images/black-Knight.png"></div>
+            <div id="H1" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="black-Rock1" class="pieces black Rock1" src="images/black-Rock.png"></div>
+        </div>
+
+        <div id="row-2" class="row">
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center"><span>2</span></div>
+            <div id="A2" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="black-Pawn1" class="pieces black blackPawn" src="images/black-Pawn.png"></div>
+            <div id="B2" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="black-Pawn2" class="pieces black blackPawn" src="images/black-Pawn.png"></div>
+            <div id="C2" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="black-Pawn3" class="pieces black blackPawn" src="images/black-Pawn.png"></div>
+            <div id="D2" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="black-Pawn4" class="pieces black blackPawn" src="images/black-Pawn.png"></div>
+            <div id="E2" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="black-Pawn5" class="pieces black blackPawn" src="images/black-Pawn.png"></div>
+            <div id="F2" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="black-Pawn6" class="pieces black blackPawn" src="images/black-Pawn.png"></div>
+            <div id="G2" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="black-Pawn7" class="pieces black blackPawn" src="images/black-Pawn.png"></div>
+            <div id="H2" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="black-Pawn8" class="pieces black blackPawn" src="images/black-Pawn.png"></div>
+
+        </div>
+
+        <div id="row-3" class="row">
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center"><span>3</span></div>
+            <div id="A3" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="B3" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="C3" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="D3" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="E3" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="F3" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="G3" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="H3" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+        </div>
+
+        <div id="row-4" class="row">
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center"><span>4</span></div>
+            <div id="A4" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="B4" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="C4" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="D4" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="E4" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="F4" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="G4" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="H4" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+
+        </div>
+
+        <div id="row-5" class="row">
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center"><span>5</span></div>
+            <div id="A5" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="B5" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="C5" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="D5" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="E5" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="F5" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="G5" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="H5" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+        </div>
+
+        <div id="row-6" class="row">
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center"><span>6</span></div>
+            <div id="A6" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="B6" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="C6" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="D6" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="E6" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="F6" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+            <div id="G6" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"></div>
+            <div id="H6" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"></div>
+
+        </div>
+
+        <div id="row-7" class="row">
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center"><span>7</span></div>
+            <div id="A7" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="white-Pawn1" class="pieces white whitePawn" src="images/white-Pawn.png"></div>
+            <div id="B7" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="white-Pawn2" class="pieces white whitePawn" src="images/white-Pawn.png"></div>
+            <div id="C7" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="white-Pawn3" class="pieces white whitePawn" src="images/white-Pawn.png"></div>
+            <div id="D7" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="white-Pawn4" class="pieces white whitePawn" src="images/white-Pawn.png"></div>
+            <div id="E7" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="white-Pawn5" class="pieces white whitePawn" src="images/white-Pawn.png"></div>
+            <div id="F7" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="white-Pawn6" class="pieces white whitePawn" src="images/white-Pawn.png"></div>
+            <div id="G7" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="white-Pawn7" class="pieces white whitePawn" src="images/white-Pawn.png"></div>
+            <div id="H7" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="white-Pawn8" class="pieces white whitePawn" src="images/white-Pawn.png"></div>
+        </div>
+
+        <div id="row-8" class="row">
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center"><span>8</span></div>
+            <div id="A8" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="white-Rock" class="pieces white Rock2" src="images/white-Rock.png"></div>
+            <div id="B8" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="white-Knight" class="pieces white" src="images/white-Knight.png"></div>
+            <div id="C8" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="white-Bishop" class="pieces white" src="images/white-Bishop.png"></div>
+            <div id="D8" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="white-Queen" class="pieces white" src="images/white-Queen.png"></div>
+            <div id="E8" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="white-King" class="pieces white" src="images/white-King.png"></div>
+            <div id="F8" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="white-Bishop1" class="pieces white" src="images/white-Bishop.png"></div>
+            <div id="G8" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: #999999"><img id="white-Knight1" class="pieces white" src="images/white-Knight.png"></div>
+            <div id="H8" class="col-md-1 col-xs-1 col-sm-1 col-lg-1 square" style="background-color: white"><img id="white-Rock1" class="pieces white Rock2" src="images/white-Rock.png"></div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center"></div>
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center">A</div>
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center">B</div>
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center">C</div>
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center">D</div>
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center">E</div>
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center">F</div>
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center">G</div>
+            <div class="col-md-1 col-xs-1 col-sm-1 col-lg-1" style="text-align: center">H</div>
+        </div>
+
+    </div>
+
+<div class="row"><div class="mark col-md-12 col-xs-12 col-sm-12 col-lg-12" role="alert">Copyright @ 2017 - ChessXtremes.tk</div></div>
+    <script src="js/jquery-3.2.1.min%20(1).js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/home-controller.js"></script>
+</body>
+</html>
