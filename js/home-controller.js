@@ -55,6 +55,13 @@ $('.pieces').on("click",function (eventdata) {
     if(!(currentPossition.hasClass('pieceHover'))&& currentPossition.hasClass('Rock2')){
         pathofWhiteRook(currentPossition);
     }
+    if(!(currentPossition.hasClass('pieceHover'))&& currentPossition.hasClass('Queen1')){
+        pathofBlackRook(currentPossition);
+    }
+    if(!(currentPossition.hasClass('pieceHover'))&& currentPossition.hasClass('Queen2')){
+        pathofWhiteRook(currentPossition);
+    }
+
 });
 
 ////////////////////////////////set of blackPawn/////////////////////////////////
@@ -492,6 +499,14 @@ function pathofBlackRook(eventData) {
     var LetterArrayPossition=($.inArray(letter,LetterArray));
     var NumberArrayPossition=($.inArray(parseInt(no),NumberArray));
     var tempId=LetterArray[LetterArrayPossition]+NumberArray[NumberArrayPossition+1];
+    var tempId1=LetterArray[LetterArrayPossition]+NumberArray[NumberArrayPossition+1];
+    var tempId2=LetterArray[LetterArrayPossition]+NumberArray[NumberArrayPossition+1];
+    var tempIdA=LetterArray[LetterArrayPossition+1]+NumberArray[NumberArrayPossition];
+    var tempIdB=LetterArray[LetterArrayPossition+1]+NumberArray[NumberArrayPossition];
+    var tempIdC=LetterArray[LetterArrayPossition+1]+NumberArray[NumberArrayPossition];
+    var tempIdQ=LetterArray[LetterArrayPossition-1]+NumberArray[NumberArrayPossition];
+    var tempIdW=LetterArray[LetterArrayPossition-1]+NumberArray[NumberArrayPossition];
+    var tempIdE=LetterArray[LetterArrayPossition-1]+NumberArray[NumberArrayPossition];
     // var x=LetterArrayPossition;
     // for(var y=NumberArrayPossition+1;y<8;y++){
     //     tempId=LetterArray[x]+NumberArray[y];
@@ -544,6 +559,21 @@ function pathofBlackRook(eventData) {
         }
         else{
             break;
+        }
+        if (!($("#"+tempId).children().hasClass('pieces'))){
+            $("#"+tempId).addClass('selectPath');
+            currentPossition.addClass('pieceHover');
+            currentPossition.removeClass('selectPath');
+        }
+        if ($("#"+tempId1).children().hasClass('white')){
+            $("#" + tempId1).addClass('crosspiece');
+            currentPossition.addClass('pieceHover');
+            currentPossition.removeClass('selectPath');
+        }
+        if ($("#"+tempId2).children().hasClass('white')){
+            $("#" + tempId2).addClass('crosspiece');
+            currentPossition.addClass('pieceHover');
+            currentPossition.removeClass('selectPath');
         }
     }
     var x1=NumberArrayPossition;
@@ -643,7 +673,7 @@ function pathofWhiteRook(eventData) {
 
 //////////////////////////remove pieces//////////////////////////////////////
 
-$(".square").on("click",function (eventData) {
+$(".square").mousedown(function (eventData) {
     var currentSquare=$(this);
     var currentPiece=$(".pieces.pieceHover");
     if($(currentSquare).hasClass('selectPath')){
@@ -653,7 +683,7 @@ $(".square").on("click",function (eventData) {
     }
     if($(currentSquare).hasClass('crosspiece')){
         var y=$(currentPiece).clone();
-        $(currentPiece).remove();
+        //$(currentPiece).remove();
         $(currentSquare).children().remove();
         currentSquare.append(currentPiece);
         suares.removeClass('selectPath');
